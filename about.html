@@ -1,131 +1,364 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>오시는 길 & 가격 정보 | 당산 코인노래방 상세 매뉴얼</title>
-  <meta name="description" content="가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 당산 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나...">
-  <link rel="canonical" href="https://t3b05-ds-coin-sale-1.pages.dev/about.html">
-  <meta name="bpaas-design-system" content="editorial-luxury">
-  <meta name="bpaas-design-theme" content="kr-editorial-luxury">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    
-      :root {
-        --bg: #faf9f6;
-        --fg: #1c1c1e;
-        --accent: #8a7355;
-        --muted: #6e6e73;
-        --border: #e5e5e0;
-      }
-      body { background: var(--bg); color: var(--fg); font-family: 'Noto Serif KR', serif; line-height: 1.8; }
-      header { border-bottom: 1px solid var(--border); padding: 20px 0; }
-      .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
-      .hero { padding: 80px 0; text-align: left; border-bottom: 1px solid var(--border); }
-      .hero h1 { font-size: 3rem; font-weight: 400; color: var(--fg); margin-bottom: 24px; letter-spacing: -0.03em; }
-      .btn { display: inline-block; padding: 12px 36px; border: 1px solid var(--accent); color: var(--accent); text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; transition: all 0.3s; }
-      .btn:hover { background: var(--accent); color: #fff; }
-      .content-section { padding: 60px 0; }
-      .card { border-bottom: 1px solid var(--border); padding: 32px 0; }
-      .card h3 { font-size: 1.4rem; font-weight: 500; margin-bottom: 12px; }
-      .review-grid { display: grid; grid-template-columns: 1fr; gap: 24px; margin-top: 40px; }
-      .review-card { border: 1px solid var(--border); padding: 24px; background: #fff; }
-    
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; border: 1px solid var(--border); }
-    th, td { padding: 12px; border: 1px solid var(--border); text-align: center; }
-    th { background: rgba(0,0,0,0.02); font-weight: bold; }
-    header .container { display: flex; justify-content: space-between; align-items: center; }
-    .logo { font-size: 1.5rem; font-weight: 900; text-decoration: none; color: var(--fg); letter-spacing: -0.05em; }
-    nav a { color: var(--fg); text-decoration: none; font-weight: 700; margin-left: 12px; font-size: 0.9rem; }
-    nav a:hover { color: var(--accent); }
-    footer { border-top: 1px solid var(--border); padding: 40px 0; background: rgba(0,0,0,0.01); color: var(--muted); font-size: 0.85rem; }
-    footer .container { display: flex; justify-content: space-between; align-items: center; }
-    footer a { color: var(--muted); text-decoration: none; font-weight: bold; }
-    footer a:hover { color: var(--accent); }
-    .p-bar { background: var(--accent); color: #fff; padding: 10px 0; text-align: center; font-weight: 700; font-size: 0.95rem; }
-    .p-bar a { color: #fff; text-decoration: underline; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>당산 코인노래방 정보 | 당산에서 제대로 노는 법</title>
+    <meta name="description" content="당산 코인노래방 할인부터 위치, 운영시간, 최신곡까지 싹 다 공개. 당산역 앞 3분, 24시, 주차OK. 전화 010-6279-0862">
+    <meta name="keywords" content="당산 코인노래방, 당산 코인노래방 할인, 당산노래방 정보, 코인노래방 위치, 당산역 노래방, 24시 노래방, 당산 술자리, bro">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-raw-concrete">
+    <link rel="canonical" href="https://t3b05-ds-coin-sale-1.vercel.app/info">
+    <meta property="og:title" content="당산 코인노래방 찐정보 | 30분 더 부르는 비밀">
+    <meta property="og:description" content="당산 코인노래방 할인받고 30분 더 즐기는 꿀팁 대공개. bro들의 전쟁터 당산코인노래방, 가격 파괴하고 와라. 010-6279-0862">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b05-ds-coin-sale-1.vercel.app/info">
+    <meta property="og:image" content="https://t3b05-ds-coin-sale-1.vercel.app/og-image.jpg">
+    <style>
+        /* ===== RESET & BASE ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f0e8;
+            color: #222;
+            line-height: 1.6;
+            padding: 0 20px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ===== TYPOGRAPHY ===== */
+        h1, h2, h3, h4 {
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+            line-height: 1.1;
+        }
+        h1 {
+            font-size: clamp(2.4rem, 8vw, 4.5rem);
+            margin-bottom: 0.5rem;
+            border-left: 8px solid #e63946;
+            padding-left: 20px;
+        }
+        h2 {
+            font-size: clamp(1.8rem, 5vw, 3rem);
+            margin: 2rem 0 1rem;
+            border-bottom: 4px solid #222;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: clamp(1.3rem, 3vw, 2rem);
+            margin: 1.5rem 0 0.8rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        a {
+            color: #e63946;
+            text-decoration: none;
+            font-weight: 700;
+            border-bottom: 2px solid transparent;
+            transition: border 0.2s;
+        }
+        a:hover {
+            border-bottom-color: #e63946;
+        }
+        strong, .accent {
+            color: #e63946;
+            font-weight: 800;
+        }
+
+        /* ===== LAYOUT ===== */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        section {
+            padding: 3rem 0;
+            border-bottom: 2px dashed #ccc;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ===== NAVIGATION ===== */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 4px solid #222;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        .nav-logo {
+            font-weight: 900;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+        .nav-links a {
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            border: none;
+        }
+        .nav-links a:hover {
+            color: #222;
+            background: #ffd166;
+            padding: 2px 6px;
+        }
+        .hamburger {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            background: none;
+            border: none;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background: #f5f0e8;
+                border: 3px solid #222;
+                padding: 1rem;
+                gap: 1rem;
+                z-index: 1000;
+                min-width: 200px;
+            }
+            .nav-links.open {
+                display: flex;
+            }
+            .hamburger {
+                display: block;
+            }
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            background: #222;
+            color: #f5f0e8;
+            padding: 4rem 2rem;
+            margin: 1rem 0 2rem;
+            border: 6px solid #e63946;
+            position: relative;
+        }
+        .hero h1 {
+            border-left-color: #ffd166;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin-top: 0.5rem;
+        }
+        .hero .badge {
+            display: inline-block;
+            background: #e63946;
+            color: #fff;
+            padding: 0.3rem 1rem;
+            font-weight: 800;
+            font-size: 0.9rem;
+            margin-top: 1rem;
+            text-transform: uppercase;
+        }
+
+        /* ===== CARDS ===== */
+        .card {
+            background: #fff;
+            border: 3px solid #222;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 6px 6px 0 #222;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        .card ul {
+            list-style: square;
+            padding-left: 1.5rem;
+            margin: 0.8rem 0;
+        }
+        .card ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* ===== FAQ ===== */
+        .faq-item {
+            border-bottom: 2px solid #ddd;
+            padding: 1rem 0;
+        }
+        .faq-item:last-child {
+            border: none;
+        }
+        .faq-question {
+            font-weight: 800;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding-top: 0.5rem;
+        }
+        .faq-item.open .faq-question::after {
+            transform: rotate(45deg);
+        }
+        .faq-item.open .faq-answer {
+            max-height: 300px;
+        }
+
+        /* ===== TEL LINK ===== */
+        .tel-link {
+            display: inline-block;
+            background: #e63946;
+            color: #fff;
+            font-weight: 900;
+            font-size: 1.5rem;
+            padding: 0.8rem 2rem;
+            border: 3px solid #222;
+            text-decoration: none;
+            transition: all 0.2s;
+            margin-top: 1rem;
+            text-align: center;
+        }
+        .tel-link:hover {
+            background: #222;
+            color: #ffd166;
+            border-color: #ffd166;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 4px solid #222;
+            margin-top: 2rem;
+        }
+
+        /* ===== HIGHLIGHT ===== */
+        .highlight {
+            background: #ffd166;
+            padding: 0.2rem 0.4rem;
+            font-weight: 800;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            body {
+                padding: 0 10px;
+            }
+            .hero {
+                padding: 2rem 1rem;
+            }
+            .hero h1 {
+                font-size: 2rem;
+                padding-left: 12px;
+                border-left-width: 5px;
+            }
+            .hero p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="p-bar">🚨 형님들 눈탱이 없는 리얼 정찰제 문의: <a href="tel:010-6279-0862">📞 010-6279-0862</a> (24시간 실시간 대기)</div>
-  <header>
     <div class="container">
-      <a href="index.html" class="logo">당산.코인노래방</a>
-      <nav><a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a></nav>
-    </div>
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1>오시는 길 &amp; 투명한 가격 안내</h1>
-        <p style="font-size:1.25rem; opacity:0.9;">형이 직접 엄선한 최강의 코스 라인업과 100% 실명 정찰제 가격 테이블</p>
-      </div>
-    </section>
-    
-    <section class="content-section">
-      <div class="container">
-        <div class="card">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">형이 샵을 직접 엄선하고 관리하게 된 리얼 스토리</h2>
-          <p style="font-size:1.1rem; line-height:1.9; margin-bottom:20px;">가성비 끝판왕 코노의 성지를 짓기 위해 발로 뛰었음. 나 역시 학창 시절부터 혼코노 즐기던 매니아였는데, 당산 학원가 근처 코노 갔다가 마이크 지직거리고 에코 썩어있어서 삑사리 지대 나고 개쪽팔렸던 한 서린 추억이 있다. 그때 맹세했지. 내 강서 마포 바닥에 동전 하나도 귀하게 쓰이는 역대급 하이엔드 코인노래방을 만들겠다고. 그렇게 다듬어진 예약 라인이 010-6279-0862다.</p>
-        </div>
+        <nav>
+            <div class="nav-logo"><a href="/" style="border:none;color:#222;">BRO<span class="accent">★</span>COIN</a></div>
+            <button class="hamburger" aria-label="메뉴 열기" onclick="document.querySelector('.nav-links').classList.toggle('open')">☰</button>
+            <ul class="nav-links">
+                <li><a href="/">홈</a></li>
+                <li><a href="/info">정보</a></li>
+                <li><a href="/discount">할인</a></li>
+                <li><a href="/contact">문의</a></li>
+            </ul>
+        </nav>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">100% 투명 정찰제 요금표</h2>
-          <p style="font-size:1.05rem; color:var(--muted); margin-bottom:15px;">※ 카드로 결제하시든 현금으로 결제하시든 예약 특가 그대로 완벽 적용됩니다. 추가요금 요구 시 형이 전액 환불해 줌.</p>
-          
-        <table>
-          <thead>
-            <tr><th>코인 할인 패키지</th><th>곡 수/시간</th><th>기본가</th><th>예약 할인가 (010-6279-0862)</th></tr>
-          </thead>
-          <tbody>
-            <tr><td>동전 코인 패키지 A</td><td>12곡</td><td>5,000원</td><td><strong>4,000원</strong></td></tr>
-            <tr><td>동전 대량 패키지 B</td><td>30곡</td><td>10,000원</td><td><strong>8,000원</strong></td></tr>
-            <tr><td>시간제 단체 패키지 C</td><td>60분 무제한</td><td>15,000원</td><td><strong>12,000원</strong></td></tr>
-          </tbody>
-        </table>
-      
-          <div style="margin-top:30px; text-align:center;">
-            <a href="tel:010-6279-0862" class="btn">실시간 견적 및 즉시 예약: 📞 010-6279-0862</a>
-          </div>
-        </div>
+        <section class="hero">
+            <h1>당산 코인노래방<br>찐정보</h1>
+            <p>위치, 가격, 할인, 꿀팁까지 — 당산에서 제일 잘 노는 법. bro가 직접 까발린다.</p>
+            <span class="badge">🔥 당산역 도보 3분 · 24시 · 주차OK</span>
+        </section>
 
-        <div class="card" style="margin-top:40px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">상세 위치 시그널 및 시설 안내</h2>
-          <p style="font-size:1.1rem; line-height:1.9;">상세 찾아오시는 길: 당산 지하철역 출구에서 도보 30초 컷 상가 2층에 위치해 있어 눈비 와도 뛰어가기 너무 편함. 주변 유명 코스들과 직결되어 있어서 데이트 코스 마지막 방점으로 완벽하다.</p>
-        </div>
+        <section>
+            <h2>📍 당산에서 코인노래방 왜 여기야?</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>🚇 역세권 甲</h3>
+                    <p>당산역 <strong>3번 출구</strong>에서 걸어서 3분. 비 오는 날도 문제없다. 술자리 중간에 런치하기 딱 좋은 위치.</p>
+                    <p>주변에 <span class="highlight">편의점, 치킨, 포장마차</span> 다 모여있어서 안주 사러 나가기도 편함.</p>
+                </div>
+                <div class="card">
+                    <h3>⏰ 24시 풀가동</h3>
+                    <p>새벽 3시에 갑자기 노래 부르고 싶을 때? 여기 열려있다. <strong>24시간</strong> 운영이라 막차 끊겨도 OK.</p>
+                    <p>토요일 새벽에도 사람 많음 — 미리 전화하고 가는 걸 추천한다.</p>
+                </div>
+            </div>
+        </section>
 
-        <div style="margin-top:60px;">
-          <h2 style="font-size:2rem; margin-bottom:24px; color:var(--accent);">단골 고객 추천 실시간 찐소감</h2>
-          <div class="review-grid">
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>최요한</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">위생 상태가 코노 중에 진짜 탑입니다. 갈 때마다 소독 깨끗이 되어 있어서 믿고 부릅니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-23</small>
-    </div>
-  
-    <div class="review-card">
-      <div style="display:flex; justify-content:space-between; margin-bottom:10px;">
-        <strong>백호진</strong>
-        <span style="color:#e0a82e;">⭐⭐⭐⭐⭐</span>
-      </div>
-      <p style="font-size:0.9rem; color:var(--muted);">당산 코인노래방 할인 꿀 정보 진짜 대박이네요. 실장님 010-6279-0862 연락하니 엄청 친절하십니다.</p>
-      <small style="display:block; margin-top:10px; color:#bbb;">작성일: 2026-05-27</small>
-    </div>
-  </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="container">
-      <div>&copy; 2026 당산 코인노래방 스페셜 가이드. All Rights Reserved.</div>
-      <div>
-        <a href="index.html">홈</a> | <a href="about.html">정보</a> | <a href="blog.html">블로그</a>
-      </div>
-    </div>
-  </footer>
+        <section>
+            <h2>💰 가격·할인·팁</h2>
+            <div class="grid-2">
+                <div class="card">
+                    <h3>💲 코인 가격표</h3>
+                    <ul>
+                        <li>1코인 (4곡) — <strong>1,000원</strong></li>
+                        <li>5코인 (20곡) — <strong>4,000원</strong> (20% 할인)</li>
+                        <li>10코인 (40곡) — <strong>7,000원</strong> (30% 할인)</li>
+                        <li><span class="accent">야간 할인</span> 밤 10시 이후 5코인 이상 구매 시 <strong>1코인 추가 증정</strong></li>
+                    </ul>
+                    <p>가격은 변동될 수 있으니 <a href="tel:01062790862">전화</a>로 확인하는 게 가장 정확하다.</p>
+                </div>
+                <div class="card">
+                    <h3>🎤 꿀팁 3가지</h3>
+                    <ol>
+                        <li><strong>단체로 가면</strong> 10코인 이상 구매 시 사장님이 간단한 음료 서비스 (있는 날만).</li>
+                        <li><strong>앱 예약</strong>하고 가면 대기 없이 바로 입장 — 주말엔 필수.</li>
+                        <li><strong>생일</strong>이라고 말하면 깜짝 서비스 받을 확률 70% (당일 한정).</li>
+                    </ol>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:2
 </body>
 </html>
